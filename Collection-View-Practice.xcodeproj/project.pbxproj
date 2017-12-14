@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		81C5A8251FE2D07D00B23428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5A8241FE2D07D00B23428 /* AppDelegate.swift */; };
-		81C5A8271FE2D07D00B23428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5A8261FE2D07D00B23428 /* ViewController.swift */; };
+		81C5A8271FE2D07D00B23428 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5A8261FE2D07D00B23428 /* CardsViewController.swift */; };
 		81C5A82A1FE2D07D00B23428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C5A8281FE2D07D00B23428 /* Main.storyboard */; };
 		81C5A82C1FE2D07D00B23428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C5A82B1FE2D07D00B23428 /* Assets.xcassets */; };
 		81C5A82F1FE2D07D00B23428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C5A82D1FE2D07D00B23428 /* LaunchScreen.storyboard */; };
+		81C5A8371FE2D3D000B23428 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5A8361FE2D3D000B23428 /* Card.swift */; };
+		81C5A8391FE2D4E500B23428 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5A8381FE2D4E500B23428 /* CardCollectionViewCell.swift */; };
+		81C5A83B1FE2DB9C00B23428 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5A83A1FE2DB9C00B23428 /* NetworkHelper.swift */; };
+		81DB21071FE2EAEE003BB78A /* ImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB21061FE2EAEE003BB78A /* ImageAPIClient.swift */; };
+		81DB21091FE2F0D1003BB78A /* KeyedArchiverClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB21081FE2F0D1003BB78A /* KeyedArchiverClient.swift */; };
+		81DB210D1FE315CB003BB78A /* FavoriteCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB210C1FE315CB003BB78A /* FavoriteCardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81C5A8211FE2D07D00B23428 /* Collection-View-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection-View-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C5A8241FE2D07D00B23428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81C5A8261FE2D07D00B23428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81C5A8261FE2D07D00B23428 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		81C5A8291FE2D07D00B23428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81C5A82B1FE2D07D00B23428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C5A82E1FE2D07D00B23428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81C5A8301FE2D07D00B23428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C5A8361FE2D3D000B23428 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		81C5A8381FE2D4E500B23428 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		81C5A83A1FE2DB9C00B23428 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		81DB21061FE2EAEE003BB78A /* ImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIClient.swift; sourceTree = "<group>"; };
+		81DB21081FE2F0D1003BB78A /* KeyedArchiverClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedArchiverClient.swift; sourceTree = "<group>"; };
+		81DB210C1FE315CB003BB78A /* FavoriteCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				81C5A8241FE2D07D00B23428 /* AppDelegate.swift */,
-				81C5A8261FE2D07D00B23428 /* ViewController.swift */,
+				81C5A83A1FE2DB9C00B23428 /* NetworkHelper.swift */,
+				81DB21061FE2EAEE003BB78A /* ImageAPIClient.swift */,
+				81C5A8261FE2D07D00B23428 /* CardsViewController.swift */,
+				81DB21081FE2F0D1003BB78A /* KeyedArchiverClient.swift */,
+				81C5A8361FE2D3D000B23428 /* Card.swift */,
 				81C5A8281FE2D07D00B23428 /* Main.storyboard */,
+				81DB210C1FE315CB003BB78A /* FavoriteCardsViewController.swift */,
+				81C5A8381FE2D4E500B23428 /* CardCollectionViewCell.swift */,
 				81C5A82B1FE2D07D00B23428 /* Assets.xcassets */,
 				81C5A82D1FE2D07D00B23428 /* LaunchScreen.storyboard */,
 				81C5A8301FE2D07D00B23428 /* Info.plist */,
@@ -136,7 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C5A8271FE2D07D00B23428 /* ViewController.swift in Sources */,
+				81DB210D1FE315CB003BB78A /* FavoriteCardsViewController.swift in Sources */,
+				81DB21091FE2F0D1003BB78A /* KeyedArchiverClient.swift in Sources */,
+				81C5A8391FE2D4E500B23428 /* CardCollectionViewCell.swift in Sources */,
+				81C5A8271FE2D07D00B23428 /* CardsViewController.swift in Sources */,
+				81C5A83B1FE2DB9C00B23428 /* NetworkHelper.swift in Sources */,
+				81DB21071FE2EAEE003BB78A /* ImageAPIClient.swift in Sources */,
+				81C5A8371FE2D3D000B23428 /* Card.swift in Sources */,
 				81C5A8251FE2D07D00B23428 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
